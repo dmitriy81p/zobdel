@@ -1,0 +1,217 @@
+.tab-wrap-video{
+	padding-left: 20px;
+	padding-top: 33px;
+}
+.box-tab-cont_video{
+	padding-top: 66px;
+	padding-bottom: 80px;
+}
+.nav-tab-list__item_video{
+	padding-right: 19px;
+}
+.nav-tab-list__item_video.active:before{
+	left: 15px;
+	bottom: -8px;
+}
+.nav-tab-list__link_video{
+	font-size: 14px;
+	line-height: 18px;
+}
+.tab-cont-video {
+	list-style-type: none;
+	margin: 0 -10px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin: 0 -10px;
+}
+.video__item {
+	width: -webkit-calc(50% - 20px);
+	width: calc(50% - 20px);
+	height: 260px;
+	position: relative;
+	margin: 0 10px;
+	margin-bottom: 10px;
+	background: #fff;
+	-webkit-border-radius:5px 0 0 5px;
+	        border-radius:5px 0 0 5px;
+}
+.video__link{
+	display: block;
+	height: 100%;
+	width: 100%;
+	-webkit-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	-webkit-border-radius:5px;
+	        border-radius:5px;
+	img{
+		width: 100%;
+		opacity: 0;
+		-webkit-border-radius:5px;
+		        border-radius:5px;
+	}
+}
+.button-youtube{
+	background: url(../img/video/button-youtube.png);
+	width: 73px;
+	height: 49px;
+	-webkit-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: -webkit-calc(50% - 24.5px);
+	top: calc(50% - 24.5px);
+	left: -webkit-calc(50% - 36.5px);
+	left: calc(50% - 36.5px);
+	opacity: 1;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	&:before{
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-left: 18px solid #fff;
+		border-bottom: 10px solid transparent;
+		top: 13px;
+		left: 27px;
+	}
+}
+.video__link:hover .button-youtube{
+	opacity: 0.9;
+}
+
+.video__video{
+	width: 56%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	-webkit-border-radius:5px;
+	        border-radius:5px;
+	overflow: hidden;
+	iframe{
+		-webkit-border-radius: 5px;
+		        border-radius: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+}
+.video__info{
+	padding-left: 59%;
+	height: 100%;
+	padding-right: 5px;
+}
+.video__title{
+	display: block;
+	color: #1a273e;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	height: 100%;
+	margin-bottom: -32px;
+	padding-top: 14px;
+	&:hover{
+		color: $brand-color;
+	}
+}
+.video__theme{
+	color: #929292;
+	font-size: 14px;
+	font-weight: 300;
+	margin-left: -3px;
+	border-bottom:1px solid transparent;
+	&:hover{
+		color: #ffde00;
+		border-bottom:1px solid #ffde00;
+	}
+}
+.iframe-overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	background-color: transparent;
+}
+@media screen and (max-width:1780px){
+.tab-wrap-video{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media screen and (max-width:1680px){
+	.nav-tab-list__item_video {
+		margin-bottom: 12px;
+	}
+}
+@media screen and (max-width:1040px){
+	.tab-wrap-video{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media screen and (min-width:969px) and (max-width:1200px){
+	.video__item {
+  height: 220px;
+}
+}
+@media screen and (max-width:969px){
+	.video__item {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.tab-cont-video {
+		margin: 0;
+	}
+    .video__item{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:550px){
+	.box-tab-cont_video {
+		padding-top: 20px;
+	}
+	.video__item {
+		height: 320px;
+	}
+	.video__info {
+		padding-left: 15px;
+		height: 100%;
+		padding-right: 15px;
+		width: 100%;
+		padding-bottom: 10px;
+		margin-bottom: -250px;
+	}
+	.video__title {
+		height: auto;
+		margin-bottom: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.video__theme {
+		margin-left: 0px;
+	}
+	.video__video {
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 250px;
+	}
+}

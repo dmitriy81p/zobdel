@@ -1,0 +1,13 @@
+@mixin transition($default-transition) {
+  -webkit-transition: $default-transition;
+     -moz-transition: $default-transition;
+      -ms-transition: $default-transition;
+		-o-transition: $default-transition;
+           transition: $default-transition;
+}
+
+@mixin font($font-s, $font-h, $font-c) {
+    font-size: $font-s;
+    line-height: $font-h;
+    color:$font-c;
+}
